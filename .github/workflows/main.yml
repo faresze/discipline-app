@@ -21,7 +21,7 @@ jobs:
     - name: Install Dependencies
       run: |
         pip install flet
-        pip install -r requirements.txt
+        # We removed the faulty requirements line because flet is already installed above.
 
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
