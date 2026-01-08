@@ -21,12 +21,13 @@ jobs:
     - name: Install Dependencies
       run: |
         pip install flet
-        # We removed the faulty requirements line because flet is already installed above.
+        # Removed redundant requirements line
 
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.19.0'
+        # FIX: Updated Flutter version to match Flet requirements
+        flutter-version: '3.24.5'
 
     - name: Build APK
       run: |
